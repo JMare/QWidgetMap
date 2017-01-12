@@ -19,8 +19,8 @@
 CONFIG += c++11
 
 # Enforce all warnings as errors.
-unix:QMAKE_CXXFLAGS += -Werror
-win32|win64:QMAKE_CXXFLAGS += /WX
+#unix:QMAKE_CXXFLAGS += -Werror
+#win32|win64:QMAKE_CXXFLAGS += /WX
 
 # Hide debug output in release mode.
 CONFIG(release, debug|release) : DEFINES += QT_NO_DEBUG_OUTPUT
