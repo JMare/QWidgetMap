@@ -23,19 +23,3 @@ CONFIG += ordered
 
 # Add the projects to be built.
 SUBDIRS += QWidgetMap
-
-# Should the example project be added?
-with-example {
-    message(The Example project will also be built...)
-
-    # Add the example project.
-    SUBDIRS += Example
-}
-
-# Should the plugin projects be added?
-with-plugins {
-    message(The Qt Designer plugin projects will also be built...)
-
-    # Add the plugins project.
-    SUBDIRS += QtDesignerPlugins
-}

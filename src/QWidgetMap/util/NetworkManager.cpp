@@ -113,7 +113,7 @@ void NetworkManager::downloadImage(const QUrl& url, const QSize& size_px)
             success = true;
 
             // Log success.
-            qDebug() << "Downloading image '" << url << "'";
+            //qDebug() << "Downloading image '" << url << "'";
         }
     }
 
@@ -185,7 +185,7 @@ void NetworkManager::downloadFinished(QNetworkReply* reply)
                 if(reply->error() != QNetworkReply::NoError)
                 {
                     // Log error.
-                    qDebug() << "Failed to download '" << reply->url() << "' with error '" << reply->errorString() << "'";
+                    //qDebug() << "Failed to download '" << reply->url() << "' with error '" << reply->errorString() << "'";
 
                     // Emit that we failed to download the image.
                     emit downloadFailed(reply->url());
@@ -193,7 +193,7 @@ void NetworkManager::downloadFinished(QNetworkReply* reply)
                 else
                 {
                     // Log success.
-                    qDebug() << "Downloaded image '" << reply->url() << "'";
+                    //qDebug() << "Downloaded image '" << reply->url() << "'";
 
                     // Read in pixmap from reply.
                     QImageReader reader(reply);

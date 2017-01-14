@@ -43,7 +43,7 @@ RCC_DIR = resources
 UI_DIR = ui
 
 # Target install directory.
-DESTDIR = ../lib
+DESTDIR = lib
 
 # Function to generate the target type.
 defineReplace(targetType) {
